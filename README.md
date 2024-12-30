@@ -6,7 +6,7 @@ Code for the paper *"Emergent Atomic Environments in Twisted Bilayer Graphene an
 ## Authors
 [Dilara Ickecan](https://avesis.ticaret.edu.tr/dickecan) (Istanbul Ticaret University, Marmara University)
 
-[Yunus Emre Okyayli](https://www.erbaharlab.com/p/people.html) (Dogus University)
+[Yunus Emre Okyayli](https://www.erbaharlab.com/p/people.html) 
 
 [Erdi Ata Bleda](https://avesis.marmara.edu.tr/ata.bleda) (Marmara University)
 
