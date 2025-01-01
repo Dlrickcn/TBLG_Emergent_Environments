@@ -1,6 +1,6 @@
 This study shows the usage of fix-phonon to calculate the dynamical matrix as well as phonon dispersion curve for TBLG based on a Tersoff potential.
 
-he files under this directory:
+The files under this directory:
 
  1) Graphene.bin.20000000   : last output binary file by fix-phonon
  2) Graphene.log           : log file for fix-phonon
