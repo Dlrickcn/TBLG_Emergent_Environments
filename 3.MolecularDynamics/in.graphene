@@ -1,0 +1,54 @@
+#3D copper block simulation
+boundary     p p p
+units        metal
+atom_style   atomic
+
+# geometry
+read_data	 data.pos
+
+mass            1   12.0107
+mass            2   12.0107
+ 
+# EAM potential
+pair_style   hybrid lj/cut 10.0 tersoff
+pair_coeff   * * tersoff SiC.tersoff C C 
+pair_coeff   1 2 lj/cut 0.00284 3.40 
+neighbor     2. nsq
+neigh_modify every 1 delay 0 check yes
+
+#Langevin random seed
+#variable     dt equal 2e-3
+#variable     r  equal 57085
+#variable     T  equal 300
+#variable     dT equal "v_dt * 100"
+
+timestep 0.001
+
+#minimize
+dump mins all xyz 1  min.xyz
+dump_modify mins element C C
+minimize 1.0e-4 1.0e-6 1000 10000
+undump mins
+
+# initialize
+velocity     all create 300 28459 rot yes dist gaussian mom yes
+reset_timestep 0
+
+# fixes 
+fix          1 all langevin 300 300 100 73504 zero yes
+fix          2 all nve
+fix          3 all phonon 10 100000 2000000 map.in Graphene nasr 50
+
+# output
+#                    1    2    3  4  5     6   7
+thermo_style custom step temp pe ke press pxx pyy
+thermo       1000
+
+#restart      1000000 restart.one restart.two
+
+dump   1 all xyz 5000 dump.graphene.xyz
+dump_modify 1 element C C 
+
+# execution
+run 	20000000
+write_restart Restart.final
