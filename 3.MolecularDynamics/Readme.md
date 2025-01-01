@@ -26,5 +26,4 @@ And then use the gnuplot script file "plot.disp" to generate pdisp.eps:
 
 The resultant ``pdisp.eps'' shows the measured phonon dispersion.
 
-NOTE: the binary file provided here might be unreadable on some computers because of
-      incompatibility between different architectures.
+NOTE: the binary file provided here might be unreadable on some computers because of incompatibility between different architectures.
