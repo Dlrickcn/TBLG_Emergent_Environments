@@ -1,4 +1,4 @@
-#Phonon total density of state curves calculated from molecular dynamics simulations for 2.13º rotated TBLG 
+# Phonon total density of state curves calculated from molecular dynamics simulations for 2.13º rotated TBLG 
 
 This study shows the usage of fix-phonon to calculate the dynamical matrix as well as phonon dispersion curve for TBLG based on a Tersoff potential.
 
