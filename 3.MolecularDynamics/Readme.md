@@ -5,12 +5,12 @@ This study shows the usage of fix-phonon to calculate the dynamical matrix as we
 The files under this directory:
 1) Graphene.bin.20000000  : last output binary file by fix-phonon
 2) data.pos               : LAMMPS input file
-3) pdisp.dat              : phonon dispersion data from Graphene.bin.20000000
+3) pdos.dat              : phonon DOS  data from Graphene.bin.20000000
 4) in.graphene            : LAMMPS input file
 5) map.in                 : LAMMPS input file for fix-phonon
 6) pdos.png               : figure of phonon DOS curves
-7) plot.pdos              : gnuplot script to generate pdisp.eps
-8) pdos.gnuplot           : gnuplot script to generate pdisp.eps (auto generated)
+7) plot.pdos              : gnuplot script to generate pdos.eps
+8) pdos.gnuplot           : gnuplot script to generate pdos.eps (auto generated)
 
 To run this example, simply invoke: 
 -> lmp -in in.graphene -screen none
