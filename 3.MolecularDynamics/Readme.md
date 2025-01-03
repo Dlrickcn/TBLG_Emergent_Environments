@@ -23,4 +23,9 @@ And then use the gnuplot script file "plot.disp" to generate pdisp.eps:
 
 The resultant ``pdisp.png'' shows the measured phonon dispersion.
 
-Our work is used the details of the code in the [link](https://github.com/lingtikong/fix-phonon/tree/master)
+**Our work is used the details of the code in the [link](https://github.com/lingtikong/fix-phonon/tree/master)**
+
+
+Phonon total density of state curves calculated from molecular dynamics simulations for 2.13º rotated TBLG 
+
+![PDOS](https://github.com/user-attachments/assets/7593982e-5622-4fc3-bf61-148eb06c6900)
