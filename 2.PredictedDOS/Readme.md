@@ -1,4 +1,4 @@
-#	Training the model from local environment
+#	Training the model from local environment for 2.13º rotated TBLG
 
 ![image](https://github.com/user-attachments/assets/7b373a83-2be6-40e0-a302-344603daf024)
 
