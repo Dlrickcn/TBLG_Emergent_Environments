@@ -3,6 +3,8 @@ Code for the paper *"Emergent Atomic Environments in Twisted Bilayer Graphene an
 
 ![image](https://github.com/user-attachments/assets/0dfb3312-3a85-409f-a32d-e1a6f4b7deb9)
 
+Figure 1.General scheme of KRR training. 605 SOAP features for each atom with different atomic environments are fed into the input layer. The frequency spectrums are divided into 972 equal parts and PLDOS’s are predicted at each frequency. The kernel matrix is trained over approximately 13500 atomic environments and their respective PLDOS’s produced from 112 different TBLG structures. The predicted PLDOS’s are used to construct PTDOS of TBLG structures. 
+
 ## Authors
 [Dilara Ickecan](https://avesis.ticaret.edu.tr/dickecan) (Istanbul Ticaret University, Marmara University)
 
