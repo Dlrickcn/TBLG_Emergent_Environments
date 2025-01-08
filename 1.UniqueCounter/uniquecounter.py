@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jan 31 15:22:58 2023
-@author: yunus
+@author:dilara, yunus
 """
 from ase.io.xyz import read_xyz
 from ase.io import read
