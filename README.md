@@ -19,7 +19,7 @@ If you have any questions, please reach out by dickecan@ticaret.edu.tr
 ## Citation
 If you use this code in your work, you can also cite the associated paper with
 
-*Ickecan D, Okyayli Y.E., Bleda E. A., Erbahar D. "Emergent Atomic Environments in Twisted Bilayer Graphene and Their Use in the Prediction of the Vibrational Properties", Computational Material Science (2025)*
+*Ickecan D, Okyayli Y.E., Bleda E. A., Erbahar D. "Emergent Atomic Environments in Twisted Bilayer Graphene and Their Use in the Prediction of the Vibrational Properties", Computational Material Science,250, [113669,2025](https://doi.org/10.1016/j.commatsci.2025.113669)
 
 and
 
