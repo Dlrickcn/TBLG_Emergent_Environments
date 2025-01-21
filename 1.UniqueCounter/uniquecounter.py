@@ -28,11 +28,6 @@ pd.set_option('display.max_colwidth', None)
 path = 'output'
 os.makedirs(path,exist_ok=True)
 
-def read_dos(file):
-    energy = np.loadtxt(file,usecols=0)
-    dos = np.loadtxt(file,usecols=1)
-    return energy, dos
-
 def get_atoms(file_name):
     crystal_vector = np.loadtxt(f"./Atom_Koordinatlari/{file_name}", skiprows=2, usecols=[6,7,8], max_rows=3, dtype=np.float64)
         
@@ -53,22 +48,6 @@ def get_atoms(file_name):
 
     return atoms
 
-
-def get_dos(file_name,atoms):
-    energy_list = []
-    pdos_list = []
-    for atom in range(len(atoms)):
-        energy, dos = read_dos(f'{file_name}/pldos_{atom}.datnorm')
-        energy_list.append(energy)
-        pdos_list.append(dos)
-        
-    pdos_list = np.array(pdos_list)
-    ldos = pdos_list.sum(axis=0)
-    ldos = np.array(ldos)
-    pdos_list = np.array(pdos_list)
-    energy_list = np.array(energy_list)
-    
-    return energy_list, pdos_list, ldos
 
 def get_angle(i_pos,neig_pos):
     norm_i = i_pos / np.linalg.norm(i_pos)
@@ -197,7 +176,6 @@ for i in range(len(moire['moire'])):
         else:
             print(path,' yok.')
 
-### Unit Cell Atom Size ile Unique Atomları Çizdirmek için.
 fig, ax = plt.subplots(1,1, figsize=(9,10))
 ax.plot(unitcell_atom_list,unique_array_length,'o')
 ax.set_xlabel('Unit Cell Atom Count', fontsize=12, fontname='Times New Roman')
